@@ -2,6 +2,9 @@
 
 A fun vanilla typescript SPA app that mimics a file explorer. For its performance and modern approach we use https://vitejs.dev/ as the bundler and https://vitest.dev/ for unit tests. We also use cypressjs for e2e tests.
 
+A deployed version of this file can be found here https://hmersin.github.io/vanilla-spa/
+
+
 ## Features
 
 - Vanilla JS with minimum dependencies

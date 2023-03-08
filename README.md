@@ -9,7 +9,7 @@ A deployed version of this file can be found here https://hmersin.github.io/vani
 
 - Vanilla JS with minimum dependencies
 - Two pane layout.
-- Left pane will display a expandable folder tree.
+- Left pane will display an expandable folder tree.
 - Right panel will display the contens of the selected folder.
 - Accessiblity support via ARIA conventions
 - Simple expressjs backend for providing the initial data
@@ -18,6 +18,10 @@ A deployed version of this file can be found here https://hmersin.github.io/vani
 - Client-side column-based sorting
 - Dark mode support
 - Collapse/Expand functionality with mouse-click and keyboard-arrow-press events
+
+### Todo 
+
+- Implement responsive design so we can support mobile devices
 
 ## Running locally
 

@@ -10,6 +10,8 @@
   --text-color: #333;
   --link-color: #333;
   --link-hover-color: #333;
+  --selected-node-color: #333;
+  --selected-node-background-color: #ddd;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -24,6 +26,8 @@
   --link-color: #eee;
   --link-hover-color: #eee;
   --background-highlight-color: #face20;
+  --selected-node-color: #eee;
+  --selected-node-background-color: #666;
 }
 
 a {
@@ -95,6 +99,11 @@ svg {
 .node_link:active {
   color: var(--highlight-color);
   background-color: var(--background-highlight-color);
+}
+
+a.selected {
+  color: var(--selected-node-color);
+  background-color: var(--selected-node-background-color);
 }
 
 .node_link + ul {

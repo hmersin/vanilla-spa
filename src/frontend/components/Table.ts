@@ -12,8 +12,8 @@ import {
   isFolder,
 } from "../utils";
 
-const downArrow = createSVG(svgDownArrow);
-const upArrow = createSVG(svgUpArrow);
+const downArrow = createSVG(svgDownArrow, { class: ".sort_icon" });
+const upArrow = createSVG(svgUpArrow, { class: ".sort_icon" });
 
 // Definition of the table
 const filesTable: ITableDefinition = {

@@ -186,6 +186,11 @@ a[aria-expanded="false"] .icon {
 
 .table th button svg {
   margin-left: 10px;
+  visibility: hidden;
+}
+
+.table th:hover button svg {
+  visibility: visible;
 }
 
 .table tr:hover {

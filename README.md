@@ -10,6 +10,8 @@ The sidebar contains the folder tree and has collapse,expand and selection capab
 
 The main section contains a simple HTML table that shows a row for each entry in the active folder. The folder rows are links so clicking on them selects the clicked folder as active. The table is sortable by clicking on the column headers.
 
+The actively selected node is encoded in the url as hash value so the active state can be bookmarked or shared amongst the users.
+
 ## Demo
 
 The project is deployed here https://hmersin.github.io/vanilla-spa/
@@ -50,9 +52,9 @@ interface ITreeNode {
 
 Frontend uses [vitejs](https://vitejs.dev/) bundler for its performance. The repo uses [vitest](https://vitest.dev/) for unit tests and cypressjs for e2e tests.
 
-### State Manamgement
+### State Management
 
-The project doesn't require a fully fledged state management system as it only has two values to describe the state:
+The project doesn't require a fully-fledged state management system as it only has two values to describe the state:
 
 - The actively selected folder: The source of truth is the url where the active hash shows the currently selected folder, so the app reacts to hash-change events.
 

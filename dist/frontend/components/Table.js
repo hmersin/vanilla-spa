@@ -2,8 +2,8 @@ import svgDownArrow from "../icons/downArrow.svg?raw";
 import svgUpArrow from "../icons/upArrow.svg?raw";
 import { NodeType } from "../types/types";
 import { createElement, createSVG, formatBytes, formatDate, getFileType, getIcon, isFolder, } from "../utils";
-const downArrow = createSVG(svgDownArrow);
-const upArrow = createSVG(svgUpArrow);
+const downArrow = createSVG(svgDownArrow, { class: ".sort_icon" });
+const upArrow = createSVG(svgUpArrow, { class: ".sort_icon" });
 // Definition of the table
 const filesTable = {
     columns: [

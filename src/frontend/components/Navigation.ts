@@ -63,7 +63,7 @@ export class TreeView {
         const linkAttributes = hasChildFolders && {
           "aria-owns": node.urlPath,
           "aria-expanded": Boolean(
-            // if this node's name is in the path mark it active
+            // if this node's name is in the path mark it selected
             getUrlHash().split("/").includes(node.name) ||
               getUrlHash() === node.urlPath
           ).toString(),
@@ -74,7 +74,7 @@ export class TreeView {
           node.name,
           {
             href: `${getUrlPath()}#/${node.urlPath}`,
-            class: `node_link ${getUrlHash() === node.urlPath ? "Active" : ""}`,
+            class: `node_link ${getUrlHash() === node.urlPath ? "selected" : ""}`,
             role: "treeitem",
             ...linkAttributes,
           },
@@ -108,15 +108,15 @@ export class TreeView {
   };
 
   update = () => {
-    // Remove all actives
+    // Remove all selecteds
     this.parent?.querySelectorAll(".node_link")?.forEach((el) => {
-      el.classList.remove("active");
+      el.classList.remove("selected");
     });
 
-    // Find the correct node and mark it active
+    // Find the correct node and mark it selected
     const el = this.parent?.querySelector(`[href='${getCurrentUrl()}'`);
     if (el) {
-      el.classList.add("active");
+      el.classList.add("selected");
       expand(el.closest(".node_link"));
     }
   };

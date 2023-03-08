@@ -9,7 +9,7 @@
     "build": "tsc && vite build",
     "test": "vitest",
     "e2e": "cypress open",
-    "e2e:ci": "cypress run",
+    "e2e:ci": "cypress run"
   },
   "devDependencies": {
     "@types/express": "^4.17.17",

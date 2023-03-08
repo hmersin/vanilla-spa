@@ -1,5 +1,8 @@
-import { defineConfig } from 'vite'
+import { defineConfig } from "vite";
 
 export default defineConfig({
-    root: process.cwd() + "/src",
-})
+  root: process.cwd() + "/src",
+  build: {
+    outDir: process.cwd() + "/dist/fe-only",
+  },
+});
